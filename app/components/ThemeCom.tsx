@@ -8,7 +8,7 @@ interface ThemeComProps {
 }
 
 const ThemeCom = ({ children }: ThemeComProps) => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
